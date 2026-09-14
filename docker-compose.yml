@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: cad-postgres
+    restart: "no"
+    environment:
+      POSTGRES_USER: cad
+      POSTGRES_PASSWORD: cad
+      POSTGRES_DB: centralized_agent_data
+    ports:
+      - "5465:5432"
+    volumes:
+      - cad_pgdata:/var/lib/postgresql/data
+
+volumes:
+  cad_pgdata:
