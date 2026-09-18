@@ -11,3 +11,5 @@ logs/
 .idea/
 .vscode/
 .DS_Store
+
+# commit-push-to-github: large files (>5MB) auto-ignored
